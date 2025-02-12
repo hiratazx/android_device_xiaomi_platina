@@ -54,7 +54,6 @@ PRODUCT_PACKAGES += \
     PlatinaFrameworksOverlay \
     PlatinaNoCutoutOverlay \
     PlatinaSettingsOverlay \
-    PlatinaSettingsProviderOverlay \
     PlatinaSystemUIOverlay
 
 # Permissions
