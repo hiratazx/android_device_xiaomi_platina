@@ -15,6 +15,12 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
            "${PATCHELF}" --set-soname "fingerprint.goodix.so" "fingerprint.goodix.default.so" "${2}"
             ;;
+        vendor/lib/libmmcamera_faceproc.so)
+            [ "$2" = "" ] && return 0
+           "${PATCHELF}" --clear-symbol-version "__aeabi_memcpy" "${2}"
+           "${PATCHELF}" --clear-symbol-version "__aeabi_memset" "${2}"
+           "${PATCHELF}" --clear-symbol-version "__gnu_Unwind_Find_exidx" "${2}"
+            ;;
         *)
             return 1
             ;;
