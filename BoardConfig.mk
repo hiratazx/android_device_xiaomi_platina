@@ -46,5 +46,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/framework_compatibility_matrix.xml
 
+# WLAN MAC
+WLAN_MAC_SYMLINK := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/platina/BoardConfigVendor.mk
