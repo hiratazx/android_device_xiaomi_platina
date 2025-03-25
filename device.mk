@@ -80,5 +80,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     PlatinaWifiOverlay
 
+# WiFi Firmware Symlinks
+PRODUCT_PACKAGES += \
+    firmware_wlan_mac.bin_symlink
+
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
