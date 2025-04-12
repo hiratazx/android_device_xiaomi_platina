@@ -576,6 +576,11 @@ vendor/firmware/cpp_firmware_v1_12_1.fw
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
+# Display calibration
+vendor/etc/qdcm_calib_data_boe_fhd_video_dsi_panel.xml
+vendor/etc/qdcm_calib_data_csot_fhd_video_dsi_panel.xml
+vendor/etc/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml
+
 # Fingerprint sensor
 vendor/etc/permissions/com.fingerprints.extension.xml
 framework/com.fingerprints.extension.jar
