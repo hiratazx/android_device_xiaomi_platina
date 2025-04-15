@@ -19,7 +19,7 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
 vendor/lib/libMegviiFacepp-0.5.2.so
-vendor/lib/libMiCameraHal.so;DISABLE_DEPS
+vendor/lib/libMiCameraHal.so
 vendor/lib/libSNPE.so
 vendor/lib/libVDClearShot.so
 vendor/lib/libVDSuperPhotoAPI.so

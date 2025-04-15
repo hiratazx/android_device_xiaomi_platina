@@ -21,7 +21,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.sdm660
+    camera.sdm660 \
+    libpiex_shim
 
 # Fingerprint
 PRODUCT_PACKAGES += \

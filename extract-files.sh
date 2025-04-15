@@ -27,6 +27,10 @@ function blob_fixup() {
             "${PATCHELF}" --clear-symbol-version "remote_handle_invoke" "${2}"
             "${PATCHELF}" --clear-symbol-version "remote_handle_open" "${2}"
             ;;
+        vendor/lib/libMiCameraHal.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            ;;
         *)
             return 1
             ;;
