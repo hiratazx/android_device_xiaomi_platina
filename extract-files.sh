@@ -21,6 +21,12 @@ function blob_fixup() {
            "${PATCHELF}" --clear-symbol-version "__aeabi_memset" "${2}"
            "${PATCHELF}" --clear-symbol-version "__gnu_Unwind_Find_exidx" "${2}"
             ;;
+        vendor/lib/libVDSuperPhotoAPI.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --clear-symbol-version "remote_handle_close" "${2}"
+            "${PATCHELF}" --clear-symbol-version "remote_handle_invoke" "${2}"
+            "${PATCHELF}" --clear-symbol-version "remote_handle_open" "${2}"
+            ;;
         *)
             return 1
             ;;
