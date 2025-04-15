@@ -207,6 +207,7 @@ vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmjpeg.so
+vendor/lib/libmmlib2d_interface.so;DISABLE_DEPS
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmpbase.so
