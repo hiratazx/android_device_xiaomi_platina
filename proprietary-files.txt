@@ -580,8 +580,8 @@ vendor/lib/libois_lc898122.so
 # Fingerprint sensor
 vendor/etc/permissions/com.fingerprints.extension.xml
 framework/com.fingerprints.extension.jar
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;DISABLE_CHECKELF
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;DISABLE_CHECKELF
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME|36350d988fb7f950c0d37f531f91bbd0f47b8fc8
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME|5305203238ad720dbe7f469b7f0ae0e59caf3893
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 
